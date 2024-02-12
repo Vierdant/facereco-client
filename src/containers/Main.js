@@ -66,7 +66,7 @@ class Main extends React.Component {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
                 imageUrl: this.state.input,
-                username: profile.name
+                username: profile?.name || null
             })
         })
         .then(response => response.json())
