@@ -1,0 +1,57 @@
+.rating-container {
+    display: flex;
+    height: fit-content;
+    gap: 1rem;
+    margin-top: 10%;
+}
+
+.rating-container p {
+    font-size: 0.8rem;
+}
+
+.rating-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.rating-button img {
+    position: absolute;
+    width: 25px;
+    margin-left: 5px;
+    pointer-events: none
+}
+
+.rating-button button {
+    padding: 8px 8px 8px 35px;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.rating-button button {
+    padding: 8px 8px 8px 35px;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.rating-button button:not(.like-button):not(.dislike-button) {
+    background-color: var(--main-color);
+}
+
+.rating-button button:hover:not(.like-button):not(.dislike-button) {
+    background-color: var(--light-shade);
+}
+
+.rating-button button:hover {
+    background-color: var(--light-shade);
+}
+
+.like-button {
+    background-color: var(--light-accent);
+}
+
+.dislike-button {
+    background-color: var(--dark-accent);
+}

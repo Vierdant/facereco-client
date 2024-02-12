@@ -1,0 +1,22 @@
+.loader {
+    width: 60px;
+  }
+  
+.loader-wheel {
+  animation: spin 1s infinite linear;
+  border: 2px solid var(--dark-shade);
+  border-left: 4px solid var(--main-color);
+  border-radius: 50%;
+  height: 50px;
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

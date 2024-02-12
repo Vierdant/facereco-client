@@ -1,0 +1,7 @@
+.result-display-container {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    background-color: var(--light-shade);
+}

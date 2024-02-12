@@ -1,0 +1,91 @@
+.inputsection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--dark-accent);
+    min-height: 400px;
+    place-items: center;
+    place-content: center;
+    transition: all 0.3s linear;
+}
+
+.form {
+    display: flex;
+    position: relative;
+}
+
+.form img {
+    margin-bottom:-8px;
+    margin-right: 10px;
+    width: 30px;
+}
+
+.inputsection input {
+    padding: 10px 10px 10px 10px;
+    width: 50vh;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.inputsection input:focus {
+    outline: 5px solid var(--dark-shade);
+}
+
+.inputsection button {
+    padding: 15px 20px 15px 20px;
+    margin-left: 10px;
+    width: 5rem;
+    border: none;
+    background-color: var(--dark-shade);
+    color: var(--light-shade);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.inputsection button:hover,
+.inputsection button:focus {
+    color: var(--light-shade);
+    box-shadow: inset 6em 0 0 0 var(--light-accent);
+}
+
+.form select {
+    position: absolute;
+    top: 100%;
+    left: 12%;
+    outline: none;
+    appearance: none;
+    border: none;
+    color: var(--light-shade);
+    background-color: var(--dark-shade);
+    padding: 5px 15px 5px 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#input-arrow-image {
+    width: 50vh;
+}
+
+@media only screen and (max-width: 900px) {
+    .inputsection {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        margin-top: 30px;
+    }
+
+    #input-arrow-image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .inputsection {
+        min-height: 300px;
+    }
+
+    .inputsection input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    background-color: var(--dark-shade);
+}
+
+nav .primary-button {
+    margin: 10px 20px 5px 5px;
+}
+
+nav .secondary-button {
+    margin: 10px 20px 5px 5px;
+}
+
+.left {
+    position: absolute;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    left: 5vh;
+}
+
+.left img {
+    width: 3rem;
+}
+
+.left h2 {
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: var(--light-shade);
+}
+
+.left h2 span {
+    color: var(--dark-accent);
+}
+
+@media only screen and (max-width: 900px) {
+    .copyright {
+        margin: auto;
+    }
+
+    nav button {
+        width: 5rem;
+    }
+}

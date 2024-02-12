@@ -1,0 +1,32 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--dark-shade);
+    color: var(--light-shade);
+    border-radius: 25px;
+    padding: 10%;
+    margin: 10% 0px;
+}
+
+.loginForm h2 {
+    justify-self: start;
+}
+
+.loginForm span {
+    color: var(--dark-accent);
+}
+
+.loginForm .invalid-box {
+    background-color: var(--dark-accent);
+    color: var(--light-shade);
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.loginForm .invalid-border {
+    border: 2px solid var(--dark-accent);
+}

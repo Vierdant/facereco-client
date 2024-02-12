@@ -1,0 +1,88 @@
+.result {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    max-width: 500px;
+}
+
+.result img {
+    width: 500px;
+    height: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.boundingBox {
+    position: absolute;
+    box-shadow: 0 0 0 3px var(--light-accent) inset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tooltip {
+    display: inline-block;
+    border-bottom: 1px dotted #666;
+    text-align: left;
+}
+
+.tooltip .right-tooltip {
+    min-width: 200px; 
+    top: 50%;
+    left: 100%;
+    margin-left: 20px;
+    transform: translate(0, -50%);
+    padding: 10px 20px;
+    color: var(--dark-shade);
+    background-color: var(--light-accent);
+    font-weight: normal;
+    font-size: 10px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 99999999;
+    box-sizing: border-box;
+    visibility: hidden; opacity: 0; transition: opacity 0.8s;
+}
+
+.tooltip:hover .right-tooltip {
+    visibility: visible; opacity: 1;
+}
+
+.tooltip .right-tooltip i {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -12px;
+    width: 12px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.tooltip .right-tooltip i::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 50%;
+    transform: translate(50%,-50%) rotate(-45deg);
+    background-color: var(--light-accent);
+}
+
+@media only screen and (max-width: 900px) {
+    .result {
+        grid-column: auto;
+        margin: 0px;
+        padding: 25px;
+        margin: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .result img{
+        width: 300px;
+    }
+}

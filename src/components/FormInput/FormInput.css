@@ -1,0 +1,17 @@
+.formInput label {
+    margin-top: 10px;
+}
+
+.formInput input {
+    height: 20px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    outline: none;
+    border: 2px solid var(--light-shade);
+    transition: border 0.1s ease;
+}
+
+.formInput input:focus {
+    border: 2px solid var(--dark-accent);
+}

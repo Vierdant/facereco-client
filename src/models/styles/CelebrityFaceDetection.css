@@ -1,0 +1,43 @@
+.celebrity-face-detection-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--light-shade);
+    min-height: 500px;
+}
+
+.celebrity-face-detection-result {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+}
+
+.celebrity-face-detection-details {
+    height: fit-content;
+    align-self: center;
+    text-align: left;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: var(--dark-shade);
+    color: var(--light-shade);
+}
+
+@media only screen and (max-width: 900px) {
+    .celebrity-face-detection-container { 
+        grid-template-columns: 1fr;
+        place-content: center;
+        place-items: center;
+    }
+
+    .celebrity-face-detection-details {
+        margin: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .celebrity-face-detection-details {
+        width: 300px;
+    }
+}

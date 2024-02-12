@@ -1,0 +1,5 @@
+.register {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--light-shade);
+}
