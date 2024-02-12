@@ -46,7 +46,7 @@ class Register extends React.Component {
         this.setState({ isFetching: true });
         this.setState({ passwordMismatch: false });
 
-        const validate = await fetch('https://face-reco-alpha-e205c6b29a80.herokuapp.com:9000/validate/register', {
+        const validate = await fetch('https://face-reco-alpha-e205c6b29a80.herokuapp.com/validate/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -89,7 +89,7 @@ class Register extends React.Component {
             return;
         }
         
-        fetch('https://face-reco-alpha-e205c6b29a80.herokuapp.com:9000/register', {
+        fetch('https://face-reco-alpha-e205c6b29a80.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

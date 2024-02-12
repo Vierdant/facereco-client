@@ -22,7 +22,7 @@ const Result = () => {
 
     useEffect(() => {
         async function fetchData() {
-            const res = await fetch(`https://face-reco-alpha-e205c6b29a80.herokuapp.com:9000/image/result/${uid}`, {
+            const res = await fetch(`https://face-reco-alpha-e205c6b29a80.herokuapp.com/image/result/${uid}`, {
                 method: 'get',
                 headers: {'Content-Type': 'application/json'}
             })

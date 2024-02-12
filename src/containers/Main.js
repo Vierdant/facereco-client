@@ -53,7 +53,7 @@ class Main extends React.Component {
 
       if (authed.value) {
         const id = JSON.parse(Cookies.get('_auth_state')).id;
-        profile = await fetch(`https://face-reco-alpha-e205c6b29a80.herokuapp.com:9000/profile/${id}`, {
+        profile = await fetch(`https://face-reco-alpha-e205c6b29a80.herokuapp.com/profile/${id}`, {
             method: 'get',
             headers: {'Content-Type': 'application/json'}
         })
@@ -61,7 +61,7 @@ class Main extends React.Component {
         .catch(console.log);
       }
 
-      fetch(`https://face-reco-alpha-e205c6b29a80.herokuapp.com:9000/image/${this.state.model}`, {
+      fetch(`https://face-reco-alpha-e205c6b29a80.herokuapp.com/image/${this.state.model}`, {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

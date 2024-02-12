@@ -30,7 +30,7 @@ class Login extends React.Component {
 
     onCredSubmit = () => {
         this.setState({ isFetching: true });
-        fetch('https://face-reco-alpha-e205c6b29a80.herokuapp.com:9000/login', {
+        fetch('https://face-reco-alpha-e205c6b29a80.herokuapp.com/login', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
